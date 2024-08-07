@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css form and link</title>
+<style>
+
+.container {
+display: inline-block;
+margin-top: 20px;
+}
+
+
+input[type=text] {
+
+width: 550px;
+padding: 12px 20px;
+  margin: 8px 0px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  
+}
+select {
+  width: 550px;
+padding: 12px 20px;
+  margin: 8px 0px;
+  display: block;
+ border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+
+input[type=submit] {
+
+  width: 550px;
+  background-color:  #078a0c;
+  color: white;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.first {
+  width: 550px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+ 
+  }
+
+input[type=submit]:hover{
+  background-color: lightgreen;
+}
+
+
+.button {
+  background-color: #0b740f;
+  color: white;
+  padding: 20px;
+  width: 140px;
+  margin-top: 10px;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  display: block;
+  cursor: pointer;
+  
+}
+
+
+
+.list {
+width: 400px;
+background-color: lightgray;
+display: none;
+position: absolute;
+font-size: 20px;
+
+
+}
+
+.list a{
+display: block;
+padding: 15px 8px;
+color: black;
+text-decoration: none;
+font-weight: bold;
+
+}
+.list a:hover {
+  background-color: green;
+}
+.drop:hover .list {
+  display: block;
+}
+.drop:hover .button {
+  background-color:lightgreen;
+  color: white;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+}
+
+
+</style>
+
+</head>
+<body> 
+  <div class="container">
+    <div class="first">
+    <form>
+<label for="fname">First Name</label><br>
+  <input type="text" id="fname" placeholder="Your name..">
+
+  
+  <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" placeholder="Your last name..">
+  <label for="country">Country</label><br>
+    <select name="country" id="country">
+ <option value="australia">Australia</option>
+ 
+ <option value="kenya">Kenya</option>
+ <option value="ethiopia">Ethiopia</option>
+ <option value="Germany">Germany</option>
+ <option value="south africa">south Africa</option>
+ 
+ 
+    </select>
+    
+ <input type="submit" value="Submit">
+  
+  
+      
+       
+ </form>
+</div>
+    <div class="drop">
+      <button class="button">Dropdown</button>
+      <div class="list">
+       <a href="#">Home</a>
+       <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+  </div>
+      
+    </div>
+  
+  
+</body>
+</html>
